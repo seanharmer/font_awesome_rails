@@ -1,4 +1,4 @@
-require 'font_awesome_rails/fa_icon_helper'
+require 'font_awesome_rails/fa_icon_util'
 
 module FontAwesomeRails
   module IconHelper
