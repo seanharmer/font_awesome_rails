@@ -41,21 +41,25 @@ module FontAwesomeRails
       end
 
       def icon_type(type)
-        return 'fas' if type.nil?
+        return 'fa-solid' if type.nil?
 
         case type.to_sym
         when :far, :regular
-          'far'
+          'fa-regular'
         when :fal, :light
-          'fal'
+          'fa-light'
         when :fab, :brand
-          'fab'
+          'fa-brands'
         when :fad, :duotone
-          'fad'
-        when :fak, :uploaded
+          'fa-duotone'
+        when :fat, :thin
+          'fa-thin'
+        when :sharp
+          'fa-sharp' 
+        when :fak, :uploaded, :kit
           'fak'
         else
-          'fas'
+          'fa-solid'
         end
       end
 
